@@ -9,7 +9,7 @@ class MoviesController < ApplicationController
      @todelete = Director.find(@id)
      @todelete.destroy
      
-     redirect_to("/")
+     redirect_to("/directors")
   end 
   def new_form
      render("/movies/new_form.html.erb")
@@ -22,7 +22,7 @@ class MoviesController < ApplicationController
     @new.image_url = params["director_url"]
     @new.save
     
-    redirect_to("/")
+    redirect_to("/directors")
   end 
   def edit_form
      @id = params[:number]
