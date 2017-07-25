@@ -22,7 +22,7 @@ class MoviesController < ApplicationController
     @new.image_url = params["director_url"]
     @new.save
     
-     render("/movies/create_form.html.erb")
+    redirect_to("/")
   end 
   def edit_form
      @id = params[:number]
