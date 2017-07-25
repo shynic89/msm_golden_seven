@@ -1,0 +1,36 @@
+<div id="pagewrap">
+
+	<header>
+		<h1>MSM Golden Seven</h1>
+	</header>
+		
+	<section id="content">
+		<h2>Directors</h2>
+		<ol>
+		<% @alld.each do |person| %>
+   		<li>
+   		<h4><%= person.name %></h4>
+   		<p><%= person.bio %></p>
+   	    <a href="/directors/<%= person.id %>">Details</a>
+   	    <a href="/directors/<%= person.id %>/edit_form">Edit</a>
+   	    <a href="/delete_director/<%= person.id %>">Delete</a>
+   		</li>
+   		
+        <% end %>
+	    </ol>
+
+	</section>
+	
+	<section id="middle">
+		<h2>Actors</h2>
+		<p>X</p>
+	</section>
+
+	<aside id="sidebar">
+		<h2>Movies</h2>
+		<p>X</p>
+
+	</aside>
+	
+
+</div>
