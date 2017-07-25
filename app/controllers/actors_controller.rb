@@ -1,7 +1,7 @@
 class ActorsController < ApplicationController
   def index
     @alld = Actor.all
-    render("/movies/index.html.erb")
+    render("/actors/index.html.erb")
   end
   
   def delete_row

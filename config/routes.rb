@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   #Directors
-  get("/", {:controller => "application", :action => "index"})
+  get("/", {:controller => "movies", :action => "index"})
   get("/directors", {:controller => "movies", :action => "index"})
   get("/delete_director/:some_id", {:controller => "movies", :action =>"delete_row"})
   get("/directors/new_form", {:controller => "movies", :action => "new_form"})
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     get("/directors/:the_id", {:controller =>"movies", :action => "read_row"})
   
   #Actors
-  get("/", {:controller => "application", :action => "index"})
+  get("/", {:controller => "actors", :action => "index"})
   get("/actors", {:controller => "actors", :action => "index"})
   get("/delete_actor/:some_id", {:controller => "actors", :action =>"delete_row"})
   get("/actors/new_form", {:controller => "actors", :action => "new_form"})
