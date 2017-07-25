@@ -1,0 +1,12 @@
+<h1>View Actor <%= @id %></h1>
+
+<ol>
+    <li><%= @name %></li>
+    <li><%= @dob %></li>
+    <li><%= @bio %></li>
+    <li><%= @image %></li>
+</ol>
+<a href="/"><button>Go back</button></a>
+<a href="/actors/<%= @id%>/edit_form">Edit actor</a>
+<a href="/delete_actor/<%= @id %>">Delete actor</a>
+
