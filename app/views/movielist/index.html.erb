@@ -1,0 +1,42 @@
+<div id="pagewrap">
+
+	<header>
+		<h1>MSM Golden Seven</h1>
+	</header>
+		
+	<section id="content">
+		
+		<h2>Directors</h2>
+		
+	</section>
+	
+	<section id="middle">
+		<h2>Actors</h2>
+
+	</section>
+
+	<aside id="sidebar">
+		<h2>Movies</h2>
+	
+	<a href="/movies/new_form">Add a new movie</a>
+		<ol>
+		<% @alld.each do |person| %>
+   		<li>
+   		<h4><%= person.title %></h4>
+   		<p><%= person.description %></p>
+   		<p><%= person.year %></p>
+   		<p><%= person.duration %></p>
+   		<p><%= person.image_url %></p>
+   	    <a href="/movies/<%= person.id %>">Show details</a>
+   	    <a href="/movies/<%= person.id %>/edit_form">Edit</a>
+   	    <a href="/delete_movie/<%= person.id %>">Delete movie</a>
+   		</li>
+   		
+        <% end %>
+	    </ol>
+
+
+	</aside>
+	
+
+</div>

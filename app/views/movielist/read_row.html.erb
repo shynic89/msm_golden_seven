@@ -1,0 +1,13 @@
+<h1>View Movie <%= @id %></h1>
+
+<ol>
+    <li><%= @title %></li>
+    <li><%= @description %></li>
+    <li><%= @year %></li>
+    <li><%= @duration %></li>
+    <li><%= @image %></li>
+</ol>
+<a href="/"><button>Go back</button></a>
+<a href="/movies/<%= @id%>/edit_form">Edit movie</a>
+<a href="/delete_movie/<%= @id %>">Delete movie</a>
+
