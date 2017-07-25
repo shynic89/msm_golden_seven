@@ -1,1 +1,31 @@
-form
+<h1>New Director</h1>
+<form action="/directors/create_form">
+    <div>
+    <label id="name">
+        Name
+    </label>
+    <input id="name" name="director_name" type="text" placeholder="type a director's name">
+    </div>
+    
+    <div>
+    <label id="bio">
+        Bio
+    </label>
+    <input id="bio" name="director_bio" type="text" placeholder="type a director's bio">
+    </div>
+     
+     <div>
+    <label id="dob">
+        DoB
+    </label>
+    <input id="dob" name="director_dob" type="text" placeholder="type a director's dob">
+    </div>  
+    
+    <div>
+    <label id="image">
+        Image URL
+    </label>
+    <input id="image" name="director_url" type="text" placeholder="type the URL of the director's image">
+    </div>
+    <button>Create Director</button>
+</form>

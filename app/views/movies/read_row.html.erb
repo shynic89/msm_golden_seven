@@ -1,1 +1,12 @@
-Hi
+<h1>View Director <%= @id %></h1>
+
+<ol>
+    <li><%= @name %></li>
+    <li><%= @dob %></li>
+    <li><%= @bio %></li>
+    <li><img src="<%= @image %>"></li>
+</ol>
+<a href="/"><button>Go back</button></a>
+<a href="/directors/<%= @id%>/edit_form"><button>Edit</button></a>
+<a href="/delete_director/<%= @id %>"><button>Delete</button></a>
+

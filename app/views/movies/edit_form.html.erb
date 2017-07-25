@@ -1,1 +1,30 @@
-edit
+<h1>Edit Director <%= @id %></h1>
+
+<form action="/update_director/<%= @id %>">
+    <div>
+        <label id="name">
+            Name
+        </label>
+        <input id="name" name="director_name" type="text" value=<%= @name %>>
+    </div>
+    <div>
+        <label id="dob">
+            DoB
+        </label>
+        <input id="dob" name="director_dob" type="text" value=<%= @dob %>>
+    </div>
+    <div>
+        <label id="bio">
+            Bio
+        </label>
+        <input id="bio" name="director_bio" type="text" value=<%=@bio %>>
+    </div>
+    <div>
+        <label id="url">
+            Image URL
+        </label>
+        <input id="url" name="director_url" type="text" value=<%= @image %>>
+    </div>
+    <button>Edit</button>
+</form>
+

@@ -11,6 +11,8 @@
    		<li>
    		<h4><%= person.name %></h4>
    		<p><%= person.bio %></p>
+   		<p><%= person.dob %></p>
+   		<img src="<%= person.image_url %>">
    	    <a href="/directors/<%= person.id %>">Details</a>
    	    <a href="/directors/<%= person.id %>/edit_form">Edit</a>
    	    <a href="/delete_director/<%= person.id %>">Delete</a>
